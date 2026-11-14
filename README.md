@@ -1,6 +1,9 @@
-# Local Vault
+# Encryption
 
 An offline terminal utility for encrypting individual files on macOS and Linux. It requires Node.js 22 or newer on your PATH and uses only built-in modules. Keep `vault.sh` and `vault.mjs` together.
+
+> [!WARNING]
+> Failing to remember the password set will result in permanent deletion of the encrypted files. Encrypted files, even when backed up, cannot be decrypted as resetting the password will permanently delete the unique generated decryption key and will generate a new one. Use with caution.
 
 ```sh
 ./vault.sh
